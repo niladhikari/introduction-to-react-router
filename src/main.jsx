@@ -1,7 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// eslint-disable-next-line no-unused-vars
-import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -10,6 +8,7 @@ import {
 import Home from './Components/Home/Home.jsx';
 import About from './Components/About/About.jsx';
 import Contact from './Components/Contact/Contact.jsx';
+import Users from './Components/Users/Users';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/user',
+        element: <Users></Users>
       }
     ]
   },
