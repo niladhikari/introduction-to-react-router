@@ -48,13 +48,13 @@ const Header = () => {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
+              <Link to={"/user"}>Users</Link>
+            </li>
+            <li>
               <Link to={"/about"}>About Us</Link>
             </li>
             <li>
               <Link to={"/contact"}>Contact Us</Link>
-            </li>
-            <li>
-              <Link to={"/user"}>Users</Link>
             </li>
           </ul>
         </div>
