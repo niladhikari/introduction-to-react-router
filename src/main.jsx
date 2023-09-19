@@ -13,6 +13,8 @@ import UserDetails from './Components/UserDetails/UserDetails';
 import Posts from './Components/Posts/Posts';
 import PostDetails from './Components/PostDetails/PostDetails';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
+import Meals from './Components/Meals/Meals';
+import MealDetails from './Components/MealDetails/MealDetails';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,18 @@ const router = createBrowserRouter([
         path: '/post/:Id',
         loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.Id}`),
         element: <PostDetails></PostDetails>
+      },
+
+      {
+        path:'/meals',
+        loader:()=> fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=A'),
+        element:<Meals></Meals>
+      },
+      {
+        path: '/meal/:mealId',
+        loader: ({ params }) =>
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.mealId}`),
+        element: <MealDetails></MealDetails>
       },
 
     ]
