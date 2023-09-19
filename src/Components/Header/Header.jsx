@@ -30,25 +30,31 @@ const Header = () => {
                 <Link to={"/"}>Home</Link>
               </li>
               <li>
+                <Link to={"/user"}>Users</Link>
+              </li>
+              <li>
+                <Link to={"/posts"}>Posts</Link>
+              </li>
+              <li>
                 <Link to={"/about"}>About Us</Link>
               </li>
               <li>
                 <Link to={"/contact"}>Contact Us</Link>
               </li>
-              <li>
-                <Link to={"/user"}>Users</Link>
-              </li>
             </ul>
           </div>
           <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex text-blue-600 font-bold">
           <ul className="menu menu-horizontal px-1">
             <li>
               <Link to={"/"}>Home</Link>
             </li>
             <li>
               <Link to={"/user"}>Users</Link>
+            </li>
+            <li>
+              <Link to={"/posts"}>Posts</Link>
             </li>
             <li>
               <Link to={"/about"}>About Us</Link>
