@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 const Header = () => {
   return (
@@ -27,19 +27,19 @@ const Header = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to={"/"}>Home</Link>
+                <NavLink to={"/"}>Home</NavLink>
               </li>
               <li>
-                <Link to={"/user"}>Users</Link>
+                <NavLink to={"/user"}>Users</NavLink>
               </li>
               <li>
-                <Link to={"/posts"}>Posts</Link>
+                <NavLink to={"/posts"}>Posts</NavLink>
               </li>
               <li>
-                <Link to={"/about"}>About Us</Link>
+                <NavLink to={"/about"}>About Us</NavLink>
               </li>
               <li>
-                <Link to={"/contact"}>Contact Us</Link>
+                <NavLink to={"/contact"}>Contact Us</NavLink>
               </li>
             </ul>
           </div>
@@ -48,19 +48,19 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex text-blue-600 font-bold">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to={"/"}>Home</Link>
+              <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
-              <Link to={"/user"}>Users</Link>
+              <NavLink to={"/user"}>Users</NavLink>
             </li>
             <li>
-              <Link to={"/posts"}>Posts</Link>
+              <NavLink to={"/posts"}>Posts</NavLink>
             </li>
             <li>
-              <Link to={"/about"}>About Us</Link>
+              <NavLink to={"/about"}>About Us</NavLink>
             </li>
             <li>
-              <Link to={"/contact"}>Contact Us</Link>
+              <NavLink to={"/contact"}>Contact Us</NavLink>
             </li>
           </ul>
         </div>
